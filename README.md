@@ -1,10 +1,10 @@
 ## Random Masking Finds Winning Tickets for Parameter Efficient Fine-tuning
 
 This repository contains the code for the paper *Random Masking Finds Winning Tickets for Parameter Efficient Fine-tuning*. 
-The implementation is based on the code of [MeZO](https://github.com/princeton-nlp/MeZO/tree/main).
+The experiments on SuperGLUE is based on the code of [MeZO](https://github.com/princeton-nlp/MeZO/tree/main).
 
-The implementation of Random Masking can be found in PEFT/random_masking.py. This implementation depends on the [spops library](https://github.com/IST-DASLab/spops/tree/main) to perform the sparse matrix operations. 
-We also provide a naive version of Random Masking in PEFT/random_masking_naive.py, which directly stores the mask and tunable parameters in dense matrices.
+The implementation of Random Masking can be found in PEFT/random_masking.py. It uses the [spops library](https://github.com/IST-DASLab/spops/tree/main) to perform the sparse matrix operations. Install spops library before running it. 
+We also provide a naive version of Random Masking in PEFT/random_masking_naive.py for illustration, which directly stores the mask and tunable parameters in dense matrices.
 
 ### Example command:
 
